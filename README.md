@@ -2,6 +2,9 @@
 
 Steps to convert original MNIST database of handwritten digits from [here](http://yann.lecun.com/exdb/mnist/) into CSV format
 
+Just run first `MNIST Convert.ipynb` and then read your results in `MNIST Read Converted.ipynb`
+Core steps are described below.
+
 ## Converting files
 
 ##### 1. Download this repo with database.
