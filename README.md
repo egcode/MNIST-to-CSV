@@ -2,8 +2,10 @@
 
 Steps to convert original MNIST database of handwritten digits from [here](http://yann.lecun.com/exdb/mnist/) into CSV format
 
-1. Download this repo with database.
-2. Convert Original lecun files into csv
+## Converting files
+
+### 1. Download this repo with database.
+### 2. Convert Original lecun files into csv
 ```
 def convert(imgf, labelf, outf, n):
     f = open(imgf, "rb")
@@ -31,23 +33,27 @@ convert("train-images-idx3-ubyte", "train-labels-idx1-ubyte",
 convert("t10k-images-idx3-ubyte", "t10k-labels-idx1-ubyte",
 "mnist_test.csv", 10000)
 ```
-3. Read new csv files:
+### 3. Read new csv files:
 
 ```
 df_orig_train = pd.read_csv('mnist_train.csv')
 df_orig_test = pd.read_csv('mnist_test.csv')
 ```
-4. Due to in train set our label column named '5' and in test set it's named '7'
+### 4. Due to in train set our label column named '5' and in test set it's named '7'
 let's  rename those into 'label' column.
 ```
 df_orig_train.rename(columns={'5':'label'}, inplace=True)
 df_orig_test.rename(columns={'7':'label'}, inplace=True)
 ```
-5. Writing our final dataframes files into new csv files.
+### 5. Writing our final dataframes files into new csv files.
 ```
 df_orig_train.to_csv('mnist_train_final.csv', index=False)
 df_orig_test.to_csv('mnist_test_final.csv', index=False)
 ```
+
+
+## Reading files
+
 ## **Requirements for installation**
 - Python 3, jupyter notebook, numpy, pandas
 <br><br>
