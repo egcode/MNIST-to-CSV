@@ -1,9 +1,15 @@
 # MNIST to CSV
 
+
+## Just run first `MNIST Convert.ipynb` and then read your results in `MNIST Read Converted.ipynb` notebooks and you are good to go.
+
+
+---------------
+If you need more details core steps are described below.
+
+
 Steps to convert original MNIST database of handwritten digits from [here](http://yann.lecun.com/exdb/mnist/) into CSV format
 
-Just run first `MNIST Convert.ipynb` and then read your results in `MNIST Read Converted.ipynb`
-Core steps are described below.
 
 ## Converting files
 
