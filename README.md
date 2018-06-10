@@ -8,7 +8,7 @@ Core steps are described below.
 ## Converting files
 
 ##### 1. Download this repo with database.
-##### 2. Convert Original lecun files into csv
+##### 2. Convert Original Lecun files into csv
 ```
 def convert(imgf, labelf, outf, n):
     f = open(imgf, "rb")
